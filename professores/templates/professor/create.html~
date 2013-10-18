@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load bootstrap_toolkit %}
+
+{% block content %}
+
+ <div class="row">
+    <div class="span12" >
+        <legend>Cadastrando Grade</legend>
+        <form action="{% url grades:create %}" method="POST">
+            {% csrf_token %}
+            {{ form|as_bootstrap }}
+            <input type="submit" value="Salvar" class="btn">
+        </form>
+    </div>
+</div>
+
+{% endblock %}

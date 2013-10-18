@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<legend>Excluir?</legend>
+    <p>{{ grade.nome }}</p>
+    <form action="{% url grades:delete grade.id %}" method="POST">
+        {% csrf_token %}
+        <input type="submit" class="btn btn-danger" value="Sim">
+        <a href="{% url grades:list %}" class="btn">Cancelar</a>
+    </form>
+{% endblock %}

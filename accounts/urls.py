@@ -1,0 +1,27 @@
+from django.conf.urls.defaults import patterns, include, url
+
+from django.contrib import admin
+admin.autodiscover()
+
+
+#import grade
+
+# Uncomment the next two lines to enable the admin:
+# from django.contrib import admin
+# admin.autodiscover()
+
+urlpatterns = patterns('accounts.views',
+    # user auth urls
+    url(r'^login/$', 'login', name='login'),
+    url(r'^auth/$', 'auth_view', name='auth'),
+    url(r'^logout/$', 'logout', name='logout'),
+    url(r'^loggedin/$', 'loggedin', name='loggedin'),
+    url(r'^invalid/$', 'invalid_login', name='invalid_login'),
+    url(r'^register/$', 'register_user', name='register'),
+    url(r'^register_success/$', 'register_success', name='register_success'),
+    url(r'^my_account/$', 'my_account', name='my_account'),
+    url(r'^get/(?P<idObj>\d+)$', 'get', name='get'),
+    url(r'^delete/(?P<idObj>\d+)$', 'delete', name='delete'),
+    url(r'^update/(?P<idObj>\d+)$', 'update', name='update'),
+    url(r'^change_password/$', 'change_password', name='change_password'),
+)

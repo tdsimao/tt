@@ -1,0 +1,119 @@
+{% extends "grade/get.html" %}
+{% load bootstrap_toolkit %}
+{%block gradeContent%}
+    <!-- Listar Objetos -->
+        
+
+        
+    <div class="tabbable"> <!-- Only required for left/right tabs -->
+    
+    
+      <ul class="nav nav-tabs">
+        <li class="active">
+            <a href="#opcoesCriarHorario" data-toggle="tab" >
+                <i class="icon-plus"></i> Criar Horario
+            </a>
+        </li>
+        {%for celula,horarioCelula in horarios.items %}
+        <li class=""><a href="#cel{{celula.id}}" data-toggle="tab">Horário {{celula.id}}</a></li>
+        {%endfor%}
+      </ul>
+      
+    </div>
+        
+        
+        
+        
+        
+    
+    <div class="tab-content">
+    
+        <div class="tab-pane active" id="opcoesCriarHorario">
+            <div class="row ">
+                <div class="span6">
+                
+                    <form action="/celulas/create/{{grade.id}}" method="POST">
+                        {% csrf_token %}
+                        {{ form|as_bootstrap }}
+                        <input type="submit" value="Criar Horario" class="btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+        {%for celula,horarioCelula in horarios.items %}
+        
+        <div class="tab-pane" id="cel{{celula.id}}">
+        
+            <div class="row">
+                <div class="span12">
+                    <div class="span4">
+                        <h4>Celula {{celula.id}}</h4>
+                        <h4>fitness {{celula.fitness}}</h4>
+                    </div>
+                    <div class="btn-group">
+                        <a href="/celulas/avaliar/{{celula.id}}" alt="Editar"   class="btn"><i  class="icon-play"></i> Reavaliar</a>
+                        <a href="/celulas/delete/{{celula.id}}" alt="Excluir"  class="btn"><i  class="icon-trash"></i> Excluir</a>
+                    </div>
+                    <table class="table" >
+                        
+                        {%for slot,horarioSlot in horarioCelula.items %}
+
+                            {% if forloop.first %}
+                                <thead> 
+                                    <tr>
+                                        <th>Dia</th>
+                                        <th>Horario</th>
+                                        {%for turma in horarioSlot.keys%}
+                                            <th>{{turma}}</th>
+                                        {%endfor%}
+                                    </tr>
+                                </thead>
+                                <tbody> 
+
+                            {% endif %}
+                            <tr>
+                                <td>
+                                {{slot.dia}}
+                                </td>
+                                <td>
+                                {{slot.horario}}
+                                </td>
+                                {%for turma,encontro in horarioSlot.items %}
+                                    <td align="center">
+                                        {{encontro.aula.disciplina}}<br>{{encontro.aula.professor}}
+                                    </td>
+                                {%endfor%}
+                            </tr>
+                        {%endfor%}
+                        
+                        </tbody>
+                    </table>
+        
+                </div>
+        
+                 <!-- Força Pular linha a cada 2 objetos  -->
+             </div>
+             
+             
+        </div>
+        {%endfor%}
+
+    </div>
+
+        {%if mensagens %}
+    
+        <div class="panel" >
+            <div class="row">
+                <div class="span12">
+                    {%for mensagem in mensagens %}
+                        {{mensagem}}<br>
+                    {%endfor%}
+                </div>
+            </div>
+        </div>
+        {%endif%}
+
+            
+{%endblock gradeContent%}
+            

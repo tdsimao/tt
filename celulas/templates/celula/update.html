@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load bootstrap_toolkit %}
+
+{% block content %}
+	<!-- main -->
+	<div class="well">
+	    <h1>Editar Turma</h1>
+    </div>
+    <p><hr></p>
+    <div class="row">
+        <!-- Objeto -->
+        <!-- Inicio de uma linha -->
+        <div class="span6">
+            <div class="well">
+    			<form action="{% url turmas:update turma.id %}" method="POST">
+    				{% csrf_token %}
+    				{{ form|as_bootstrap }}
+                    <p class="form-actions">
+            				<input type="submit" value="Salvar" class="btn">
+                            <a class="btn"  href = "{%url grades:get turma.grade.id %}">Cancelar</a>
+                    </p>
+    			</form>
+            </div>
+        </div>
+    </div>
+	
+	<!-- fim main classes -->
+{% endblock %}

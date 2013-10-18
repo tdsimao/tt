@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{%block content%}
+    <!-- main -->
+    <div class="well">
+        <h1>Disciplina</h1>
+    </div>
+    <p><hr></p>
+    <div class="row ">
+    <!-- Listar Objetos -->
+    <!-- Objeto -->
+    <!-- Inicio de uma linha -->
+        <div class="span12">
+            <div class="well">
+                <h4>Nome: {{disciplina.nome}}</h4>
+                <p>Label: {{disciplina.label}}</p>
+                <form action="{% url disciplinas:delete disciplina.id %}" method="POST">
+                    {% csrf_token %}
+                    <input type="submit" class="btn btn-danger" value="Sim">
+                    <a href="{% url disciplinas:list %}" class="btn">Cancelar</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+                
+    <!-- fim main classes -->
+{%endblock content%}

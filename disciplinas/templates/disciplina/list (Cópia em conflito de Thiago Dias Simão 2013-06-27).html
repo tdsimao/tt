@@ -1,0 +1,42 @@
+{% extends "base.html"%}
+
+{%block content%}
+	<!-- main -->
+	<div class="well">
+	    <h1>Disciplinas</h1>
+    </div>
+    <p><hr></p>
+    <div class="row ">
+    <!-- Listar Objetos -->
+        {%for disciplina in disciplinas%}
+        <!-- Objeto -->
+        <!-- Inicio de uma linha -->
+            <div class="span4">
+                <div class="well">
+                    <h4>Nome: {{disciplina.nome}}</h4>
+                    <p>Label: {{disciplina.label}}</p>
+                    <div class="btn-group">
+                        <a href="{% url disciplinas:get disciplina.id %}"    alt="Detalhes" class="btn"><i  class="icon-th"></i> Detalhes</a>
+                        <a href="{% url disciplinas:get disciplina.id %}"    alt="????" class="btn"><i  class="icon-calendar"></i>?????</a>
+                    </div>
+                    <p></p>
+                    <div class="btn-group">
+                        <a href="{% url disciplinas:update disciplina.id %}" alt="Editar"   class="btn"><i  class="icon-edit"></i> Editar</a>
+                        <a href="{% url disciplinas:delete disciplina.id %}" alt="Excluir"  class="btn"><i  class="icon-trash"></i> Excluir</a>
+                    </div>
+                </div>
+            </div>
+	
+        {%endfor%}
+            <div class="span4">
+                <div class="well" >
+                    <h4>Cadastrar Novo</h4>
+                    <p align="center">
+                    <a href="{% url disciplinas:create %}" class="btn btn-large btn-primary" ><i class="icon-plus-sign-alt icon-4x pull-left">a</a>
+                    </p>
+                </div>
+            </div>
+	    </div>
+				
+	<!-- fim main classes -->
+{%endblock content%}

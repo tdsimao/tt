@@ -1,0 +1,27 @@
+Dia	Hora	6A	6B	7A	8A	9A	1A	1B	2A	2B	3A	3B	
+0	0	Vivian / MAT	Marist / HIS	Joao / POR	Selma / ING	Bruna / MAT	Isabel / QUI	Luiza / ART	Meire / GEO	Eliane / MAT	Rodrig / POR	Monica / GEO	
+0	1	Vivian / MAT	Joao / POR	Marist / HIS	Meire / GEO	Bruna / MAT	Rodrig / ING	Eliane / MAT	Sandra / EFI	Joaqui / FIS	Monica / GEO	Paulo / BIO	
+0	2	Luiza / ART	Marist / HIS	Joao / POR	Selma / ING	Joaqui / CIE	Meire / GEO	Eliane / MAT	Isabel / QUI	Sandra / EFI	Monica / GEO	Rodrig / POR	
+0	3	Marist / HIS	Meire / GEO	Luiza / ERE	Joao / POR	Monica / GEO	Joaqui / FIS	Sandra / EFI	Eliane / MAT	Isabel / QUI	Paulo / BIO	Rodrig / POR	
+0	4	Sandra / EFI	Luiza / ERE	Meire / GEO	Joao / POR	Marist / HIS	Eliane / MAT	Rodrig / ING	Joaqui / FIS	Isabel / QUI	Paulo / BIO	Monica / GEO	
+1	0	Marist / HIS	Joao / POR	Adrian / MAT	Danila / CIE	Luiza / ERE	Lucir / HIS	Sandra / EFI	Meire / GEO	Rodrig / POR	Eliane / MAT	Hugo / HIS	
+1	1	Joao / POR	Marist / HIS	Meire / GEO	Luiza / ERE	Noemi / POR	Eliane / MAT	Lucir / FIL	Danila / BIO	Rodrig / POR	Sandra / EFI	Hugo / HIS	
+1	2	Luiza / ERE	Adrian / MAT	Sandra / EFI	Marist / HIS	Rodrig / ING	Eliane / MAT	Noemi / POR	Danila / BIO	Meire / GEO	Joaqui / FIS	Lucir / FIL	
+1	3	Rogeri / CIE	Luiza / ART	Marist / HIS	Adrian / MAT	Noemi / POR	Lucir / FIL	Meire / GEO	Hugo / HIS	Eliane / MAT	Rodrig / POR	Joaqui / FIS	
+1	4	Meire / GEO	Rogeri / CIE	Adrian / MAT	Marist / HIS	Joaqui / CIE	Luiza / ART	Noemi / POR	Lucir / FIL	Eliane / MAT	Rodrig / POR	Sandra / EFI	
+2	0	Joao / POR	Rogeri / CIE	Adrian / MAT	Danila / CIE	Sandra / EFI	Joaqui / FIS	Meire / GEO	Rodrig / POR	Eliane / MAT	Isabel / QUI	Monica / SOC	
+2	1	Vivian / MAT	Rogeri / CIE	Adrian / MAT	Meire / GEO	Monica / GEO	Rodrig / POR	Danila / BIO	Eliane / MAT	Sandra / EFI	Joaqui / FIS	Isabel / QUI	
+2	2	Vivian / MAT	Joao / POR	Danila / CIE	Adrian / MAT	Monica / GEO	Sandra / EFI	Eliane / MAT	Joaqui / FIS	Meire / GEO	Rodrig / POR	Isabel / QUI	
+2	3	Rogeri / CIE	Adrian / MAT	Danila / CIE	Joao / POR	Bruna / MAT	Isabel / QUI	Joaqui / FIS	Eliane / MAT	Rodrig / POR	Monica / SOC	Sandra / EFI	
+2	4	Rogeri / CIE	Meire / GEO	Joao / POR	Adrian / MAT	Bruna / MAT	Rodrig / POR	Eliane / MAT	Isabel / QUI	Monica / SOC	Sandra / EFI	Joaqui / FIS	
+3	0	Meire / GEO	Joao / POR	Adrian / MAT	Marist / HIS	Noemi / POR	Paulo / BIO	Isabel / QUI	Rodrig / POR	Danila / BIO	Hugo / HIS	Eliane / MAT	
+3	1	Joao / POR	Adrian / MAT	Selma / ING	Danila / CIE	Marist / HIS	Sandra / EFI	Noemi / POR	Hugo / HIS	Rodrig / POR	Paulo / BIO	Isabel / QUI	
+3	2	Selma / ING	Adrian / MAT	Marist / HIS	Sandra / EFI	Joaqui / CIE	Paulo / BIO	Danila / BIO	Rodrig / POR	Hugo / HIS	Isabel / QUI	Eliane / MAT	
+3	3	Sandra / EFI	Joao / POR	Danila / CIE	Adrian / MAT	Marist / HIS	Rodrig / POR	Isabel / QUI	Joaqui / FIS	Hugo / HIS	Eliane / MAT	Paulo / BIO	
+3	4	Marist / HIS	Selma / ING	Joao / POR	Adrian / MAT	Sandra / EFI	Rodrig / ING	Joaqui / FIS	Isabel / QUI	Danila / BIO	Eliane / MAT	Paulo / BIO	
+4	0	Vivian / MAT	Meire / GEO	Sandra / EFI	Joao / POR	Noemi / POR	Lucir / HIS	Hugo / HIS	Edison / SOC	Joaqui / FIS	Eliane / MAT	Rodrig / POR	
+4	1	Joao / POR	Adrian / MAT	Danila / CIE	Meire / GEO	Noemi / POR	Rodrig / POR	Hugo / HIS	Sandra / EFI	Joaqui / FIS	Lucir / FIL	Eliane / MAT	
+4	2	Vivian / MAT	Sandra / EFI	Joao / POR	Adrian / MAT	Joaqui / CIE	Meire / GEO	Noemi / POR	Eliane / MAT	Lucir / FIL	Hugo / HIS	Rodrig / POR	
+4	3	Meire / GEO	Sandra / EFI	Adrian / MAT	Joao / POR	Bruna / MAT	Eliane / MAT	Edison / SOC	Rodrig / POR	Danila / BIO	Isabel / QUI	Joaqui / FIS	
+4	4	Joao / POR	Adrian / MAT	Meire / GEO	Sandra / EFI	Bruna / MAT	Edison / SOC	Rodrig / ING	Danila / BIO	Isabel / QUI	Joaqui / FIS	Eliane / MAT	
+

@@ -1,0 +1,34 @@
+{% extends "base.html"%}
+
+{%block content%}
+	<!-- main -->
+    <div class="page-header">
+        <a href="{% url disciplinas:create %}" class="btn btn-large  pull-right" >
+            <i class="icon-plus pull-left"></i>  Cadastrar Disciplina
+        </a>
+	   <h1>Disciplinas</h1>
+    </div>
+    <div class="row ">
+    <!-- Listar Objetos -->
+        {%for disciplina in disciplinas%}
+	    
+	    {% include "disciplina/get.html"%}
+	
+	     <!-- Força Pular linha a cada 3 objetos  -->
+	    {% cycle '' '' '</div> <div class="row ">' %}
+                        
+	
+        {%endfor%}
+            <div class="span3">
+                <div class="well" >
+                    <h4>Cadastrar Nova</h4>
+                    <p align="center">
+                    <a href="{% url disciplinas:create %}" class="btn  btn-large btn-primary" >
+                        <i class="icon-plus-sign-alt icon-4x pull-left"></i>Adicionar&nbsp;<br>Disciplina</a>
+                    </p>
+                </div>
+            </div>
+    </div>
+				
+	<!-- fim main classes -->
+{%endblock content%}

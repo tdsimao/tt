@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<h1><a href ="/grades/get/{{ grade.id}}/">Grade {{grade.id}}</a></h1>
+<p>Escola: {{grade.escola}}</p>
+<p>Turno: {{grade.turno}}</p>
+<p>Num de diasletivos: {{grade.dias}}</p>
+<p>Quantidade de aulas por dia: {{grade.auladia}}</p>
+{% endblock %}

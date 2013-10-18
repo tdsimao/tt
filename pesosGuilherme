@@ -1,0 +1,20 @@
+
+    VAmais = 15;
+    VA = 9;
+    VMmais = 6;
+    VM = 4;
+    VBmais = 2;
+    VB = 1;
+
+
+pesos = {'choqueProfessores'       :15,
+        'professorInviavel'        :15,
+        'professorIndesejavel'     :9,
+        'professoresComExcessoDias':9,
+        'excessoAulasNoMesmoDia'   :9,   
+        'janelas'                  :2
+        }
+
+
+
+    

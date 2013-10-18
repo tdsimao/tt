@@ -1,0 +1,43 @@
+{% extends "base.html"%}
+
+{%block content%}
+	<!-- main -->
+	<div class="well">
+	    <h1>Grades</h1>
+    </div>
+    <p><hr></p>
+    <div class="row ">
+    <!-- Listar Objetos -->
+        {%for grade in grades%}
+        <!-- Objeto -->
+        <!-- Inicio de uma linha -->
+            <div class="span4">
+                <div class="well">
+                    <h4>{{grade.escola}}</h4>
+                    <p>Periodo: {{grade.turno}}</p>
+                    <p>Dias de aula por semana: {{grade.dias}}</p>
+                    <p>Numero de aulas por dia: {{grade.auladia}}</p>
+                    <p>Quantidade de turmas: {{grade.auladia}}</p>
+                    <div class="btn-group">
+                        <a href="{% url grades:get grade.id %}"    alt="Detalhes" class="btn"><i  class="icon-th"></i> Detalhes</a>
+                        <a href="{% url grades:get grade.id %}"    alt="Detalhes" class="btn"><i  class="icon-calendar"></i> Distribuicao de Aulas</a>
+                    </div>
+                    <p></p>
+                    <div class="btn-group">
+                        <a href="{% url grades:update grade.id %}" alt="Editar"   class="btn"><i  class="icon-edit"></i> Editar</a>
+                        <a href="{% url grades:delete grade.id %}" alt="Excluir"  class="btn"><i  class="icon-trash"></i> Excluir</a>
+                    </div>
+                </div>
+            </div>
+	
+        {%endfor%}
+            <div class="span4">
+                <div class="well">
+                    <h4>Cadastrar Nova</h4>
+                    <a href="{% url grades:create %}" class="btn  btn-large btn-primary">Nova </a>
+                </div>
+            </div>
+	    </div>
+				
+	<!-- fim main classes -->
+{%endblock content%}

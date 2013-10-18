@@ -1,0 +1,40 @@
+{% extends "base.html"%}
+
+
+{%block content%}
+
+	{% if form.errors%}
+		<p class="error">Sorry, that's not a valid username or password</p>
+	{% endif%}
+		<section>
+			<header class="major">
+				<h2>Login</h2>
+			</header>
+			<div>
+
+			    <!-- Inicio de uma linha -->
+			    <div class="row">
+			    
+				    <!-- Objeto -->
+				    <div class="12u"; >
+					    <section class="box">
+						    <header>
+						    </header>
+						    <form action="{% url accounts:auth %}" method="post">{% csrf_token%}
+						    	<label for:"username"> Nome de usuario</label>
+						    	<input type="text" name="username" value="" id="username">
+						    	<label for:"password"> Senha</label>
+						    	<input type="password" name="password" value="" id="password">
+						    	<input type="submit" value="login">
+						    </form>
+						    <footer>
+                            <a href="login/" class="button button-alt">Distribução </a>
+						    </footer>
+					    </section>
+				    </div>
+			    </div>
+			    <!-- Fim de uma linha -->
+				
+			</div>
+		</section>
+{%endblock content%}

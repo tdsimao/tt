@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{%block content%}
+    <!-- main -->
+    <div class="well">
+        <h1>Grade</h1>
+    </div>
+    <p><hr></p>
+    <div class="row ">
+    <!-- Listar Objetos -->
+    <!-- Objeto -->
+    <!-- Inicio de uma linha -->
+        <div class="span12">
+            <div class="well">
+                <h4>{{grade.escola}}</h4>
+                <p>Periodo: {{grade.turno}}</p>
+                <p>Dias de aula por semana: {{grade.dias}}</p>
+                <p>Numero de aulas por dia: {{grade.auladia}}</p>
+                <p>Quantidade de turmas: {{grade.auladia}}</p>
+                <form action="{% url grades:delete grade.id %}" method="POST">
+                    {% csrf_token %}
+                    <input type="submit" class="btn btn-danger" value="Sim">
+                    <a href="{% url grades:list %}" class="btn">Cancelar</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+                
+    <!-- fim main classes -->
+{%endblock content%}

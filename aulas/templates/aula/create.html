@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load bootstrap_toolkit %}
+{% load url from future %}
+
+{% block extra_head %}
+<script type="text/javascript" src="{{ STATIC_PREFIX }}assets/js/jquery-2.0.0.min.js"></script>
+<script type="text/javascript" src="{{ STATIC_PREFIX }}assets/js/aulaJquery.js"></script>
+{% endblock %}
+
+{% block content %}
+
+
+
+
+ <div class="row"> 
+    <div class="span12" >
+        <div class="panel">
+            <div class="panel-heading">
+            <h3>Turma {{turma.nome}}</h3>
+            </div>
+            <div class="panel-content">
+            
+                <table class="table" >
+                    {% if turma.totalAulas > 0 %}
+                    <thead> 
+                        <tr>
+                            <th>Disciplina</th>
+                            <th>Professor</th>
+                            <th>Quantidade</th>
+                            <th>Opções</th>
+                        </tr>
+                    </thead>
+                    {%else%}
+                    <div class='alert'> Nenhuma aula cadastrada
+                    </div>
+                    {%endif%}
+                    <tbody> 
+                        {%for aula in turma.aula_set.all%}
+            
+                         <!-- Inicio de uma aula -->
+                        <tr>
+                            <td>{{ aula.disciplina }}</td>     
+                            <td>{{ aula.professor }}</td>     
+                            <td>{{ aula.quantidade }}</td>     
+                            <td>
+                                <a href="/aulas/update/{{ aula.id}}" alt="Editar"   class="btn btn-small"><i  class="icon-edit"></i> Editar</a>
+                                <a href="/aulas/delete/{{ aula.id}}" alt="Excluir"  class="btn btn-small"><i  class="icon-trash"></i> Excluir</a>
+                            </td>     
+                        </tr>
+                    
+                         <!-- Fim de uma aula -->
+                        {%endfor%}
+                    </tbody>
+                </table>
+            
+            </div>
+        </div>
+        
+        <div class="panel">
+            <div class="panel-heading">
+                <h3>Cadastro de Aula</h3>
+            </div>
+            <div class="panel-content">
+            
+                <form action="/aulas/create/{{turma.id}}" method="POST">
+                    {% csrf_token %}
+                    {{ form }}
+                    <br>
+                    <input type="submit" value="Salvar" class="btn">
+                    <a href="/grades/get/{{turma.grade.id}}" class="btn">Cancelar</a>
+                </form>
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

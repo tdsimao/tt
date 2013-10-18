@@ -1,0 +1,86 @@
+
+<!-- Inicio de uma turma -->
+    <div class="span6">
+        <div class="well">
+            <div class="btn-group btn-group-vertical pull-right">
+                <a href="{% url turmas:update turma.id %}" alt="Editar"   class="btn"><i  class="icon-edit"></i>Editar</a>
+                <a href="{% url turmas:delete turma.id %}" alt="Excluir"  class="btn"><i  class="icon-trash"></i>Excluir</a>
+            </div>
+            <h3>{{turma.nome}}</h3>
+            <p>
+                Quantidade de aulas: {{turma.totalAulas}}
+            </p>
+            
+            <!-- AULAS -->
+            
+            
+            <div>
+            <table class="table" >
+            <caption><h4>Aulas</h4></caption>
+            {% if turma.totalAulas != grade.totalAulas %}
+            
+            <div class="alert alert-block">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                Total de aulas incompatível com a grade
+                <br>
+                São esperadas {{grade.totalAulas}} aulas
+                
+            </div>
+
+            {%else%}
+
+            <thead> 
+            <tr>
+                <th>Disciplina</th>
+                <th>Professor</th>
+                <th>Quantidade</th>
+                <th>Opções</th>
+            </tr>
+            </thead>
+            {%endif%}
+             
+            <tbody> 
+            {%for aula in turma.aula_set.all%}
+
+             <!-- Inicio de uma aula -->
+            <tr>
+                <td>{{ aula.disciplina }}</td>     
+                <td>{{ aula.professor }}</td>     
+                <td>{{ aula.quantidade }}</td>     
+                <td>
+                    <a href="/aulas/update/{{ aula.id}}" alt="Editar"   class="btn btn-small"><i  class="icon-edit"></i> Editar</a>
+                    <a href="/aulas/delete/{{ aula.id}}" alt="Excluir"  class="btn btn-small"><i  class="icon-trash"></i> Excluir</a>
+                </td>     
+           </tr>
+        
+             <!-- Fim de uma aula -->
+            {%endfor%}
+            
+            
+            <tr>
+                <td colspan="4">
+                    <a href="/aulas/create/{{ turma.id}}" class="btn" >
+                        <i class="icon-plus"></i> Adicionar Aula</a>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+
+            {%if turma.aula_set.all.count > 25 %}
+            
+                <div class="alert alert-error">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <h4>Atenção!</h4>
+                    Numero de aulas excedido
+                </div>
+
+            {%endif%}
+
+
+            </div>
+            
+                
+            
+        </div>
+
+    </div>

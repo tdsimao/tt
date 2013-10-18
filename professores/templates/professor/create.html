@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load bootstrap_toolkit %}
+
+{% block content %}
+
+ <div class="row">
+    <div class="span12" >
+        <legend>Cadastrando Professor</legend>
+        <form action="{% url professores:create %}" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Salvar" class="btn">
+                    <a href="{% url professores:list %}" class="btn">Cancelar</a>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

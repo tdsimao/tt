@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+{% load bootstrap_toolkit %}
+{% load url from future %}
+{% load static %}
+{% get_static_prefix as STATIC_PREFIX %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Timetabling Escolar</title>
+    <meta name="description" content="">
+    <meta name="author" content="Thiago Dias Simão">
+    {% bootstrap_stylesheet_tag %}
+    {% bootstrap_stylesheet_tag "responsive" %}
+
+    <link rel="stylesheet" href="{{ STATIC_PREFIX }}assets/font-awesome/css/font-awesome.min.css">
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+        }
+    </style>
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    {% bootstrap_javascript_tag %}
+    {% block extra_head %}{% endblock %}
+</head>
+
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="/">timetabling escolar</a>
+            <ul class="nav pull-left">
+                <li class="divider-vertical"></li>
+                <li><a href="/" class="">Página Inicial</a></li>
+                <li class="divider-vertical"></li>
+                {% if user.is_authenticated %}
+                <li><a href="{% url 'grades:list' %}">Grades</a></li>
+                <li><a href="{% url 'grades:list' %}">Professores</a></li>
+                <li><a href="{% url 'grades:list' %}">Disciplinas</a></li>
+                <li class="divider-vertical"></li>
+                {% endif %}
+            </ul>
+            <ul class="nav pull-right">
+                <li class="divider-vertical"></li>
+                {% if user.is_authenticated %}
+                <li><a href="{% url 'accounts:my_account' %}">Meu Perfil</a></li>
+                <li><a href="{% url 'accounts:logout' %}">Sair</a></li>
+                {% else %}
+                <li><a href="{% url 'accounts:login' %}">Entrar</a></li>
+                <li><a href="{% url 'accounts:register' %}">Criar Conta</a></li>
+                {% endif %}
+                <li class="divider-vertical"></li>
+                {% if user.is_superuser %}
+                <li><a href="/admin/">Admin</a></li>
+                <li class="divider-vertical"></li>
+                {% endif %}
+                {% comment %}
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">DropMenu<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Vertical</a></li>
+                        <li><a href="#">Horizontal</a></li>
+                        <li><a href="#">Inline</a></li>
+                        <li><a href="#">Search</a></li>
+                        <li><a href="#">Using template</a></li>
+                    </ul>
+                </li>
+                {% endcomment %}
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+ 
+
+    {% bootstrap_messages %}
+
+    {% block content %}
+
+    {% endblock %}
+
+    <p><hr></p>
+
+    <footer class="row">
+        <div class="span6">
+            <p>This is <a href="https://github.com/dyve/django-bootstrap-toolkit">django-bootstrap-toolkit</a></p>
+        </div>
+        <div class="span6" style="text-align:right">
+            <p>
+                &copy; <a href="http://twitter.com/dyve">Dylan Verheul</a> 2012
+                |
+                <a href="https://raw.github.com/dyve/django-bootstrap-toolkit/master/LICENSE">license</a>
+            </p>
+        </div>
+    </footer>
+
+</div> <!-- container -->
+
+</body>
+</html>

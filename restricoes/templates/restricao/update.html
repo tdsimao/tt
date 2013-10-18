@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load bootstrap_toolkit %}
+
+{% block content %}
+	<!-- main -->
+	<div class="well">
+	    <h1>Editar Restricoes</h1>
+    </div>
+    <p><hr></p>
+    <div class="row">
+        <!-- Objeto -->
+        <!-- Inicio de uma linha -->
+        <div class="span12">
+            <div class="well">
+    			<form action="/restricoes/update/{{idGrade}}/{{ idProfessor}}" method="POST">
+    				{% csrf_token %}
+                    <h4>Tabela de Restrições</h4>
+                    <div >
+                        <table class="table" >
+                        <thead> 
+                        <tr>
+                            {%for dia in dias_da_semana%}
+                                <th>{{dia}}</th>
+                            {%endfor%}
+                        </tr>
+                        </thead>
+                        <tbody> 
+                        {%for row in forms%}
+                            <tr>
+                            {%for form in row%}
+                            {%for field in form%}
+                                <td>{{field}}</td>
+                            {%endfor%}
+                            {%endfor%}
+                            </tr>
+                        {%endfor%}
+                        
+                        </tbody>
+                        </table>
+                    </div>
+                    <p class="form-actions">
+            				<input type="submit" value="Salvar" class="btn">
+                            <a class="btn"  href = "/restricoes/list/{{idGrade}}">Cancelar</a>
+                    </p>
+    			</form>
+            </div>
+        </div>
+    </div>
+	
+	<!-- fim main classes -->
+{% endblock %}

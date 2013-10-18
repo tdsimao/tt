@@ -1,0 +1,24 @@
+# -*- coding: utf-8 -*-
+from django.db import models
+#from django.contrib.auth.models import User
+from grades.models import Grade,Slot
+from aulas.models import Aula
+
+
+
+class Celula(models.Model):
+    id = models.AutoField(primary_key = True, unique = True)
+    grade = models.ForeignKey(Grade)
+    fitness  = models.FloatField(null = True)
+    def __unicode__(self):
+        return self.fitness 
+    
+    
+class Encontro(models.Model):
+    id = models.AutoField(primary_key = True, unique = True)
+    celula = models.ForeignKey(Celula)
+    slot = models.ForeignKey(Slot)
+    aula = models.ForeignKey(Aula)
+    def __unicode__(self):
+        return str(self.aula.disciplina)+' / '+str(self.aula.professor)+' - dia'+str(self.slot.dia)
+    

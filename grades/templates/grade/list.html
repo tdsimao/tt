@@ -1,0 +1,44 @@
+{% extends "base.html"%}
+
+{%block content%}
+	<!-- main -->
+    <div class="page-header">
+        <a href="{% url grades:create %}" class="btn btn-large btn-primary pull-right" >
+            <i class="icon-plus pull-left"></i>  Cadastrar Grade
+        </a>
+	    <h1>Grades</h1>
+    </div>
+    <div class="row ">
+    <!-- Listar Objetos -->
+        {%for grade in grades%}
+        <!-- Objeto -->
+        <!-- Inicio de uma linha -->
+            <div class="span6">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div class="btn-group btn-group-vertical pull-right">
+                            <a href="{% url grades:update grade.id %}" alt="Editar"   class="btn"><i  class="icon-edit"></i> Editar</a>
+                            <a href="{% url grades:delete grade.id %}" alt="Excluir"  class="btn"><i  class="icon-trash"></i> Excluir</a>
+                        </div>
+                        <a href="{% url grades:get grade.id %}"    alt="Detalhes" >
+                            <h4 class="panel-title" >{{grade.escola}}
+                            <br>
+                            <br>
+                            {{grade.ano}}/{{grade.periodo}}: {{grade.turno}}</h4>
+                        </a>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">{{grade.dias}} dias letivos por semana</li>
+                        <li class="list-group-item">{{grade.auladia}} aulas por dia </li>
+                        <li class="list-group-item">{{grade.turma_set.count}} turmas cadastradas </li>
+                    </ul>
+                    
+                    
+                </div>
+            </div>
+	
+        {%endfor%}
+	    </div>
+				
+	<!-- fim main classes -->
+{%endblock content%}

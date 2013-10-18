@@ -1,0 +1,276 @@
+
+    VAmais = 15;
+    VA = 9;
+    VMmais = 6;
+    VM = 4;
+    VBmais = 2;
+    VB = 1;
+
+
+pesos = {'choqueProfessores'       :15,
+        'professorInviavel'        :15,
+        'professorIndesejavel'     :9,
+        'professoresComExcessoDias':9,
+        'excessoAulasNoMesmoDia'   :9,   
+        'janelas'                  :2
+        }
+
+
+População Inicial:
+
+1642.0 {'janelas': 41, 'excessoAulasNoMesmoDia': 7, 'choqueProfessores': 78, 'professorInviavel': 4, 'professorIndesejavel': 12, 'professoresComExcessoDias': 13.0}
+1553.0 {'janelas': 40, 'excessoAulasNoMesmoDia': 6, 'choqueProfessores': 73, 'professorInviavel': 7, 'professorIndesejavel': 9, 'professoresComExcessoDias': 11.0}
+1580.0 {'janelas': 37, 'excessoAulasNoMesmoDia': 14, 'choqueProfessores': 75, 'professorInviavel': 5, 'professorIndesejavel': 5, 'professoresComExcessoDias': 10.0}
+1548.0 {'janelas': 36, 'excessoAulasNoMesmoDia': 10, 'choqueProfessores': 71, 'professorInviavel': 4, 'professorIndesejavel': 11, 'professoresComExcessoDias': 13.0}
+1584.0 {'janelas': 33, 'excessoAulasNoMesmoDia': 10, 'choqueProfessores': 74, 'professorInviavel': 6, 'professorIndesejavel': 8, 'professoresComExcessoDias': 12.0}
+1535.0 {'janelas': 28, 'excessoAulasNoMesmoDia': 7, 'choqueProfessores': 75, 'professorInviavel': 8, 'professorIndesejavel': 6, 'professoresComExcessoDias': 9.0}
+1679.0 {'janelas': 34, 'excessoAulasNoMesmoDia': 13, 'choqueProfessores': 74, 'professorInviavel': 10, 'professorIndesejavel': 9, 'professoresComExcessoDias': 12.0}
+1523.0 {'janelas': 34, 'excessoAulasNoMesmoDia': 13, 'choqueProfessores': 73, 'professorInviavel': 6, 'professorIndesejavel': 8, 'professoresComExcessoDias': 7.0}
+1666.0 {'janelas': 38, 'excessoAulasNoMesmoDia': 10, 'choqueProfessores': 85, 'professorInviavel': 4, 'professorIndesejavel': 5, 'professoresComExcessoDias': 9.0}
+1523.0 {'janelas': 34, 'excessoAulasNoMesmoDia': 5, 'choqueProfessores': 74, 'professorInviavel': 8, 'professorIndesejavel': 5, 'professoresComExcessoDias': 10.0}
+1679.0 {'janelas': 37, 'excessoAulasNoMesmoDia': 8, 'choqueProfessores': 80, 'professorInviavel': 7, 'professorIndesejavel': 8, 'professoresComExcessoDias': 12.0}
+1749.0 {'janelas': 30, 'excessoAulasNoMesmoDia': 8, 'choqueProfessores': 82, 'professorInviavel': 9, 'professorIndesejavel': 12, 'professoresComExcessoDias': 12.0}
+1564.0 {'janelas': 38, 'excessoAulasNoMesmoDia': 5, 'choqueProfessores': 77, 'professorInviavel': 6, 'professorIndesejavel': 8, 'professoresComExcessoDias': 10.0}
+1740.0 {'janelas': 33, 'excessoAulasNoMesmoDia': 17, 'choqueProfessores': 84, 'professorInviavel': 5, 'professorIndesejavel': 6, 'professoresComExcessoDias': 10.0}
+1655.0 {'janelas': 31, 'excessoAulasNoMesmoDia': 8, 'choqueProfessores': 78, 'professorInviavel': 10, 'professorIndesejavel': 6, 'professoresComExcessoDias': 11.0}
+1697.0 {'janelas': 40, 'excessoAulasNoMesmoDia': 7, 'choqueProfessores': 81, 'professorInviavel': 9, 'professorIndesejavel': 9, 'professoresComExcessoDias': 10.0}
+1706.0 {'janelas': 31, 'excessoAulasNoMesmoDia': 14, 'choqueProfessores': 79, 'professorInviavel': 5, 'professorIndesejavel': 13, 'professoresComExcessoDias': 12.0}
+1662.0 {'janelas': 30, 'excessoAulasNoMesmoDia': 11, 'choqueProfessores': 75, 'professorInviavel': 10, 'professorIndesejavel': 8, 'professoresComExcessoDias': 12.0}
+1580.0 {'janelas': 37, 'excessoAulasNoMesmoDia': 8, 'choqueProfessores': 78, 'professorInviavel': 4, 'professorIndesejavel': 9, 'professoresComExcessoDias': 10.0}
+1750.0 {'janelas': 44, 'excessoAulasNoMesmoDia': 20, 'choqueProfessores': 80, 'professorInviavel': 7, 'professorIndesejavel': 7, 'professoresComExcessoDias': 9.0}
+1680.0 {'janelas': 33, 'excessoAulasNoMesmoDia': 10, 'choqueProfessores': 78, 'professorInviavel': 7, 'professorIndesejavel': 9, 'professoresComExcessoDias': 13.0}
+1629.0 {'janelas': 42, 'excessoAulasNoMesmoDia': 10, 'choqueProfessores': 77, 'professorInviavel': 7, 'professorIndesejavel': 10, 'professoresComExcessoDias': 9.0}
+1591.0 {'janelas': 38, 'excessoAulasNoMesmoDia': 9, 'choqueProfessores': 76, 'professorInviavel': 6, 'professorIndesejavel': 9, 'professoresComExcessoDias': 10.0}
+1589.0 {'janelas': 37, 'excessoAulasNoMesmoDia': 12, 'choqueProfessores': 75, 'professorInviavel': 6, 'professorIndesejavel': 7, 'professoresComExcessoDias': 10.0}
+1649.0 {'janelas': 31, 'excessoAulasNoMesmoDia': 16, 'choqueProfessores': 74, 'professorInviavel': 9, 'professorIndesejavel': 13, 'professoresComExcessoDias': 8.0}
+1633.0 {'janelas': 32, 'excessoAulasNoMesmoDia': 13, 'choqueProfessores': 76, 'professorInviavel': 8, 'professorIndesejavel': 7, 'professoresComExcessoDias': 10.0}
+1740.0 {'janelas': 36, 'excessoAulasNoMesmoDia': 4, 'choqueProfessores': 85, 'professorInviavel': 10, 'professorIndesejavel': 7, 'professoresComExcessoDias': 11.0}
+1533.0 {'janelas': 36, 'excessoAulasNoMesmoDia': 9, 'choqueProfessores': 69, 'professorInviavel': 11, 'professorIndesejavel': 5, 'professoresComExcessoDias': 10.0}
+1656.0 {'janelas': 27, 'excessoAulasNoMesmoDia': 12, 'choqueProfessores': 77, 'professorInviavel': 6, 'professorIndesejavel': 9, 'professoresComExcessoDias': 13.0}
+1692.0 {'janelas': 33, 'excessoAulasNoMesmoDia': 9, 'choqueProfessores': 84, 'professorInviavel': 5, 'professorIndesejavel': 10, 'professoresComExcessoDias': 10.0}
+1614.0 {'janelas': 39, 'excessoAulasNoMesmoDia': 5, 'choqueProfessores': 83, 'professorInviavel': 4, 'professorIndesejavel': 6, 'professoresComExcessoDias': 10.0}
+1673.0 {'janelas': 37, 'excessoAulasNoMesmoDia': 10, 'choqueProfessores': 78, 'professorInviavel': 7, 'professorIndesejavel': 9, 'professoresComExcessoDias': 12.0}
+1571.0 {'janelas': 37, 'excessoAulasNoMesmoDia': 6, 'choqueProfessores': 76, 'professorInviavel': 6, 'professorIndesejavel': 8, 'professoresComExcessoDias': 11.0}
+1520.0 {'janelas': 28, 'excessoAulasNoMesmoDia': 8, 'choqueProfessores': 68, 'professorInviavel': 11, 'professorIndesejavel': 7, 'professoresComExcessoDias': 11.0}
+1615.0 {'janelas': 35, 'excessoAulasNoMesmoDia': 12, 'choqueProfessores': 75, 'professorInviavel': 8, 'professorIndesejavel': 7, 'professoresComExcessoDias': 10.0}
+1580.0 {'janelas': 34, 'excessoAulasNoMesmoDia': 12, 'choqueProfessores': 73, 'professorInviavel': 5, 'professorIndesejavel': 9, 'professoresComExcessoDias': 12.0}
+1645.0 {'janelas': 32, 'excessoAulasNoMesmoDia': 15, 'choqueProfessores': 77, 'professorInviavel': 5, 'professorIndesejavel': 11, 'professoresComExcessoDias': 10.0}
+1640.0 {'janelas': 34, 'excessoAulasNoMesmoDia': 11, 'choqueProfessores': 77, 'professorInviavel': 7, 'professorIndesejavel': 8, 'professoresComExcessoDias': 11.0}
+1459.0 {'janelas': 38, 'excessoAulasNoMesmoDia': 6, 'choqueProfessores': 75, 'professorInviavel': 3, 'professorIndesejavel': 4, 'professoresComExcessoDias': 9.0}
+1671.0 {'janelas': 30, 'excessoAulasNoMesmoDia': 14, 'choqueProfessores': 75, 'professorInviavel': 8, 'professorIndesejavel': 10, 'professoresComExcessoDias': 12.0}
+1588.0 {'janelas': 35, 'excessoAulasNoMesmoDia': 6, 'choqueProfessores': 77, 'professorInviavel': 7, 'professorIndesejavel': 9, 'professoresComExcessoDias': 10.0}
+1576.0 {'janelas': 38, 'excessoAulasNoMesmoDia': 9, 'choqueProfessores': 71, 'professorInviavel': 8, 'professorIndesejavel': 9, 'professoresComExcessoDias': 12.0}
+1709.0 {'janelas': 34, 'excessoAulasNoMesmoDia': 10, 'choqueProfessores': 81, 'professorInviavel': 5, 'professorIndesejavel': 11, 'professoresComExcessoDias': 13.0}
+1781.0 {'janelas': 40, 'excessoAulasNoMesmoDia': 8, 'choqueProfessores': 86, 'professorInviavel': 7, 'professorIndesejavel': 9, 'professoresComExcessoDias': 12.0}
+1591.0 {'janelas': 32, 'excessoAulasNoMesmoDia': 9, 'choqueProfessores': 76, 'professorInviavel': 6, 'professorIndesejavel': 11, 'professoresComExcessoDias': 10.0}
+1560.0 {'janelas': 36, 'excessoAulasNoMesmoDia': 9, 'choqueProfessores': 73, 'professorInviavel': 7, 'professorIndesejavel': 7, 'professoresComExcessoDias': 11.0}
+1547.0 {'janelas': 31, 'excessoAulasNoMesmoDia': 12, 'choqueProfessores': 67, 'professorInviavel': 9, 'professorIndesejavel': 7, 'professoresComExcessoDias': 13.0}
+1724.0 {'janelas': 34, 'excessoAulasNoMesmoDia': 10, 'choqueProfessores': 84, 'professorInviavel': 5, 'professorIndesejavel': 11, 'professoresComExcessoDias': 11.0}
+1686.0 {'janelas': 33, 'excessoAulasNoMesmoDia': 11, 'choqueProfessores': 82, 'professorInviavel': 5, 'professorIndesejavel': 6, 'professoresComExcessoDias': 12.0}
+1584.0 {'janelas': 33, 'excessoAulasNoMesmoDia': 9, 'choqueProfessores': 76, 'professorInviavel': 7, 'professorIndesejavel': 7, 'professoresComExcessoDias': 10.0}
+1732.0 {'janelas': 29, 'excessoAulasNoMesmoDia': 10, 'choqueProfessores': 82, 'professorInviavel': 8, 'professorIndesejavel': 9, 'professoresComExcessoDias': 12.0}
+1542.0 {'janelas': 39, 'excessoAulasNoMesmoDia': 9, 'choqueProfessores': 69, 'professorInviavel': 10, 'professorIndesejavel': 8, 'professoresComExcessoDias': 10.0}
+1476.0 {'janelas': 33, 'excessoAulasNoMesmoDia': 10, 'choqueProfessores': 74, 'professorInviavel': 3, 'professorIndesejavel': 5, 'professoresComExcessoDias': 9.0}
+1557.0 {'janelas': 36, 'excessoAulasNoMesmoDia': 8, 'choqueProfessores': 74, 'professorInviavel': 7, 'professorIndesejavel': 8, 'professoresComExcessoDias': 10.0}
+1459.0 {'janelas': 38, 'excessoAulasNoMesmoDia': 7, 'choqueProfessores': 71, 'professorInviavel': 4, 'professorIndesejavel': 5, 'professoresComExcessoDias': 11.0}
+1532.0 {'janelas': 37, 'excessoAulasNoMesmoDia': 9, 'choqueProfessores': 75, 'professorInviavel': 6, 'professorIndesejavel': 7, 'professoresComExcessoDias': 8.0}
+1765.0 {'janelas': 47, 'excessoAulasNoMesmoDia': 11, 'choqueProfessores': 86, 'professorInviavel': 6, 'professorIndesejavel': 7, 'professoresComExcessoDias': 10.0}
+1489.0 {'janelas': 35, 'excessoAulasNoMesmoDia': 10, 'choqueProfessores': 67, 'professorInviavel': 7, 'professorIndesejavel': 9, 'professoresComExcessoDias': 11.0}
+1651.0 {'janelas': 29, 'excessoAulasNoMesmoDia': 7, 'choqueProfessores': 80, 'professorInviavel': 9, 'professorIndesejavel': 10, 'professoresComExcessoDias': 9.0}
+1643.0 {'janelas': 37, 'excessoAulasNoMesmoDia': 7, 'choqueProfessores': 80, 'professorInviavel': 7, 'professorIndesejavel': 6, 'professoresComExcessoDias': 11.0}
+1553.0 {'janelas': 31, 'excessoAulasNoMesmoDia': 14, 'choqueProfessores': 74, 'professorInviavel': 5, 'professorIndesejavel': 5, 'professoresComExcessoDias': 10.0}
+1668.0 {'janelas': 36, 'excessoAulasNoMesmoDia': 11, 'choqueProfessores': 76, 'professorInviavel': 7, 'professorIndesejavel': 12, 'professoresComExcessoDias': 12.0}
+1688.0 {'janelas': 34, 'excessoAulasNoMesmoDia': 16, 'choqueProfessores': 78, 'professorInviavel': 5, 'professorIndesejavel': 6, 'professoresComExcessoDias': 13.0}
+1552.0 {'janelas': 32, 'excessoAulasNoMesmoDia': 14, 'choqueProfessores': 69, 'professorInviavel': 10, 'professorIndesejavel': 7, 'professoresComExcessoDias': 9.0}
+1670.0 {'janelas': 40, 'excessoAulasNoMesmoDia': 11, 'choqueProfessores': 78, 'professorInviavel': 8, 'professorIndesejavel': 6, 'professoresComExcessoDias': 11.0}
+1441.0 {'janelas': 35, 'excessoAulasNoMesmoDia': 18, 'choqueProfessores': 62, 'professorInviavel': 5, 'professorIndesejavel': 9, 'professoresComExcessoDias': 10.0}
+1590.0 {'janelas': 36, 'excessoAulasNoMesmoDia': 11, 'choqueProfessores': 74, 'professorInviavel': 5, 'professorIndesejavel': 9, 'professoresComExcessoDias': 12.0}
+1577.0 {'janelas': 43, 'excessoAulasNoMesmoDia': 10, 'choqueProfessores': 74, 'professorInviavel': 6, 'professorIndesejavel': 6, 'professoresComExcessoDias': 11.0}
+1647.0 {'janelas': 36, 'excessoAulasNoMesmoDia': 11, 'choqueProfessores': 80, 'professorInviavel': 3, 'professorIndesejavel': 11, 'professoresComExcessoDias': 11.0}
+1619.0 {'janelas': 34, 'excessoAulasNoMesmoDia': 13, 'choqueProfessores': 77, 'professorInviavel': 4, 'professorIndesejavel': 9, 'professoresComExcessoDias': 11.0}
+1641.0 {'janelas': 33, 'excessoAulasNoMesmoDia': 11, 'choqueProfessores': 77, 'professorInviavel': 11, 'professorIndesejavel': 6, 'professoresComExcessoDias': 8.0}
+1445.0 {'janelas': 40, 'excessoAulasNoMesmoDia': 8, 'choqueProfessores': 69, 'professorInviavel': 5, 'professorIndesejavel': 8, 'professoresComExcessoDias': 9.0}
+1513.0 {'janelas': 29, 'excessoAulasNoMesmoDia': 6, 'choqueProfessores': 76, 'professorInviavel': 4, 'professorIndesejavel': 6, 'professoresComExcessoDias': 11.0}
+1681.0 {'janelas': 35, 'excessoAulasNoMesmoDia': 11, 'choqueProfessores': 82, 'professorInviavel': 3, 'professorIndesejavel': 12, 'professoresComExcessoDias': 11.0}
+1842.0 {'janelas': 30, 'excessoAulasNoMesmoDia': 15, 'choqueProfessores': 89, 'professorInviavel': 8, 'professorIndesejavel': 7, 'professoresComExcessoDias': 10.0}
+1699.0 {'janelas': 32, 'excessoAulasNoMesmoDia': 13, 'choqueProfessores': 78, 'professorInviavel': 8, 'professorIndesejavel': 8, 'professoresComExcessoDias': 12.0}
+1698.0 {'janelas': 45, 'excessoAulasNoMesmoDia': 8, 'choqueProfessores': 84, 'professorInviavel': 6, 'professorIndesejavel': 6, 'professoresComExcessoDias': 10.0}
+1658.0 {'janelas': 34, 'excessoAulasNoMesmoDia': 6, 'choqueProfessores': 82, 'professorInviavel': 5, 'professorIndesejavel': 11, 'professoresComExcessoDias': 11.0}
+1779.0 {'janelas': 42, 'excessoAulasNoMesmoDia': 15, 'choqueProfessores': 81, 'professorInviavel': 8, 'professorIndesejavel': 10, 'professoresComExcessoDias': 11.0}
+1562.0 {'janelas': 25, 'excessoAulasNoMesmoDia': 11, 'choqueProfessores': 76, 'professorInviavel': 5, 'professorIndesejavel': 8, 'professoresComExcessoDias': 10.0}
+1672.0 {'janelas': 35, 'excessoAulasNoMesmoDia': 14, 'choqueProfessores': 78, 'professorInviavel': 7, 'professorIndesejavel': 11, 'professoresComExcessoDias': 9.0}
+1617.0 {'janelas': 39, 'excessoAulasNoMesmoDia': 10, 'choqueProfessores': 75, 'professorInviavel': 6, 'professorIndesejavel': 9, 'professoresComExcessoDias': 12.0}
+1597.0 {'janelas': 38, 'excessoAulasNoMesmoDia': 10, 'choqueProfessores': 74, 'professorInviavel': 8, 'professorIndesejavel': 6, 'professoresComExcessoDias': 11.0}
+1627.0 {'janelas': 32, 'excessoAulasNoMesmoDia': 10, 'choqueProfessores': 77, 'professorInviavel': 7, 'professorIndesejavel': 8, 'professoresComExcessoDias': 11.0}
+1476.0 {'janelas': 36, 'excessoAulasNoMesmoDia': 6, 'choqueProfessores': 71, 'professorInviavel': 7, 'professorIndesejavel': 5, 'professoresComExcessoDias': 10.0}
+1711.0 {'janelas': 29, 'excessoAulasNoMesmoDia': 20, 'choqueProfessores': 81, 'professorInviavel': 4, 'professorIndesejavel': 13, 'professoresComExcessoDias': 8.0}
+1683.0 {'janelas': 33, 'excessoAulasNoMesmoDia': 12, 'choqueProfessores': 79, 'professorInviavel': 7, 'professorIndesejavel': 9, 'professoresComExcessoDias': 11.0}
+1456.0 {'janelas': 38, 'excessoAulasNoMesmoDia': 16, 'choqueProfessores': 61, 'professorInviavel': 7, 'professorIndesejavel': 6, 'professoresComExcessoDias': 12.0}
+1717.0 {'janelas': 41, 'excessoAulasNoMesmoDia': 10, 'choqueProfessores': 84, 'professorInviavel': 7, 'professorIndesejavel': 5, 'professoresComExcessoDias': 10.0}
+1550.0 {'janelas': 34, 'excessoAulasNoMesmoDia': 10, 'choqueProfessores': 71, 'professorInviavel': 8, 'professorIndesejavel': 7, 'professoresComExcessoDias': 11.0}
+1609.0 {'janelas': 35, 'excessoAulasNoMesmoDia': 5, 'choqueProfessores': 82, 'professorInviavel': 7, 'professorIndesejavel': 9, 'professoresComExcessoDias': 7.0}
+1766.0 {'janelas': 34, 'excessoAulasNoMesmoDia': 11, 'choqueProfessores': 84, 'professorInviavel': 8, 'professorIndesejavel': 9, 'professoresComExcessoDias': 11.0}
+1631.0 {'janelas': 37, 'excessoAulasNoMesmoDia': 9, 'choqueProfessores': 79, 'professorInviavel': 5, 'professorIndesejavel': 11, 'professoresComExcessoDias': 10.0}
+1678.0 {'janelas': 32, 'excessoAulasNoMesmoDia': 15, 'choqueProfessores': 78, 'professorInviavel': 6, 'professorIndesejavel': 9, 'professoresComExcessoDias': 11.0}
+1579.0 {'janelas': 38, 'excessoAulasNoMesmoDia': 9, 'choqueProfessores': 73, 'professorInviavel': 7, 'professorIndesejavel': 7, 'professoresComExcessoDias': 12.0}
+1660.0 {'janelas': 32, 'excessoAulasNoMesmoDia': 10, 'choqueProfessores': 77, 'professorInviavel': 7, 'professorIndesejavel': 11, 'professoresComExcessoDias': 12.0}
+1647.0 {'janelas': 39, 'excessoAulasNoMesmoDia': 13, 'choqueProfessores': 77, 'professorInviavel': 8, 'professorIndesejavel': 7, 'professoresComExcessoDias': 9.0}
+1544.0 {'janelas': 28, 'excessoAulasNoMesmoDia': 9, 'choqueProfessores': 76, 'professorInviavel': 3, 'professorIndesejavel': 7, 'professoresComExcessoDias': 12.0}
+1539.0 {'janelas': 36, 'excessoAulasNoMesmoDia': 8, 'choqueProfessores': 75, 'professorInviavel': 6, 'professorIndesejavel': 5, 'professoresComExcessoDias': 10.0}
+1505.0 {'janelas': 43, 'excessoAulasNoMesmoDia': 8, 'choqueProfessores': 67, 'professorInviavel': 8, 'professorIndesejavel': 7, 'professoresComExcessoDias': 12.0}
+
+
+
+
+
+
+
+1065.0{'janelas': 33, 'excessoAulasNoMesmoDia': 6, 'choqueProfessores': 48, 'professorInviavel': 3, 'professorIndesejavel': 5, 'professoresComExcessoDias': 10.0}
+1050.0{'janelas': 33, 'excessoAulasNoMesmoDia': 6, 'choqueProfessores': 47, 'professorInviavel': 3, 'professorIndesejavel': 5, 'professoresComExcessoDias': 10.0}
+1011.0{'janelas': 30, 'excessoAulasNoMesmoDia': 4, 'choqueProfessores': 46, 'professorInviavel': 3, 'professorIndesejavel': 5, 'professoresComExcessoDias': 10.0}
+943.0 {'janelas': 26, 'excessoAulasNoMesmoDia': 4, 'choqueProfessores': 42, 'professorInviavel': 3, 'professorIndesejavel': 5, 'professoresComExcessoDias': 10.0}
+866.0 {'janelas': 25, 'excessoAulasNoMesmoDia': 4, 'choqueProfessores': 37, 'professorInviavel': 3, 'professorIndesejavel': 5, 'professoresComExcessoDias': 10.0}
+849.0 {'janelas': 24, 'excessoAulasNoMesmoDia': 4, 'choqueProfessores': 36, 'professorInviavel': 3, 'professorIndesejavel': 5, 'professoresComExcessoDias': 10.0}
+819.0 {'janelas': 24, 'excessoAulasNoMesmoDia': 4, 'choqueProfessores': 34, 'professorInviavel': 3, 'professorIndesejavel': 5, 'professoresComExcessoDias': 10.0}
+802.0 {'janelas': 23, 'excessoAulasNoMesmoDia': 4, 'choqueProfessores': 33, 'professorInviavel': 3, 'professorIndesejavel': 5, 'professoresComExcessoDias': 10.0}
+
+
+725.0 {'janelas': 22, 'excessoAulasNoMesmoDia': 3, 'choqueProfessores': 30, 'professorInviavel': 3, 'professorIndesejavel': 4, 'professoresComExcessoDias': 9.0}
+721.0 {'janelas': 20, 'excessoAulasNoMesmoDia': 3, 'choqueProfessores': 30, 'professorInviavel': 3, 'professorIndesejavel': 4, 'professoresComExcessoDias': 9.0}
+714.0 {'janelas': 21, 'excessoAulasNoMesmoDia': 3, 'choqueProfessores': 28, 'professorInviavel': 3, 'professorIndesejavel': 5, 'professoresComExcessoDias': 10.0}
+
+
+702.0 {'janelas': 21, 'excessoAulasNoMesmoDia': 4, 'choqueProfessores': 28, 'professorInviavel': 3, 'professorIndesejavel': 4, 'professoresComExcessoDias': 9.0}
+695.0 {'janelas': 19, 'excessoAulasNoMesmoDia': 3, 'choqueProfessores': 27, 'professorInviavel': 3, 'professorIndesejavel': 5, 'professoresComExcessoDias': 10.0}
+685.0 {'janelas': 17, 'excessoAulasNoMesmoDia': 3, 'choqueProfessores': 26, 'professorInviavel': 4, 'professorIndesejavel': 4, 'professoresComExcessoDias': 10.0}
+674.0 {'janelas': 19, 'excessoAulasNoMesmoDia': 3, 'choqueProfessores': 27, 'professorInviavel': 3, 'professorIndesejavel': 4, 'professoresComExcessoDias': 9.0}
+672.0 {'janelas': 18, 'excessoAulasNoMesmoDia': 3, 'choqueProfessores': 27, 'professorInviavel': 3, 'professorIndesejavel': 4, 'professoresComExcessoDias': 9.0}
+
+
+
+
+
+
+
+def avaliacao(celula,grade,turmas,aulas,slots,tipoRestricaoProfessorNoSlot,minimoDiasProfessor):
+    
+    #=======================================================================
+    # Verifica Criterios
+    #     Número de choques de professores
+    #     Número de aulas em horário inviável para algum professor
+    #     Número de aulas em horário indesejável para algum professor
+    #TODO Número de vezes que houve blocos de disciplinas
+    #     Número de aulas que estão sendo ministradas desrespeitando o limite diário de aulas de uma mesma disciplina
+    #     Número de janelas no horário dos professores
+    #     Número de dias em excesso dos professores (diasProfessorVaiNaEscola - totalDiasProfessoṛ/grade.auladia)
+    #TODO Número de aulas isoladas no horário dos professores
+    # 
+    #
+    #    Gera o Fitness da solucao.
+    #=======================================================================
+    
+    #Penalidades
+    penalidades = {}
+    
+    penalidades['choqueProfessores'] = 0
+    penalidades['professorInviavel'] = 0
+    penalidades['professorIndesejavel'] = 0
+    penalidades['janelas'] = 0
+    penalidades['professoresComExcessoDias']  = 0
+    penalidades['excessoAulasNoMesmoDia']  = 0
+    
+    
+    professores = minimoDiasProfessor.keys()
+    totalDiasProfessor = {}
+    mensagens = []
+    encontros = celula.encontros
+    for dia in range(grade.dias):
+        ultimaAula = {}
+        professoresNoDia = []
+        
+        professoresNoDiacomATurma = {}
+        
+        for horario in range(grade.auladia):
+            slot = slots[dia*grade.dias+horario]
+            professoresNoSlot = []
+            
+            for encontro in celula.encontros[slot].values():
+                professor = encontro.aula.professor
+                #
+                # VERIFICA SE O PROFESSOR DA MAIS DE UMA AULA NO SLOT
+                #
+                if professor in professoresNoSlot:
+                    penalidades['choqueProfessores'] += 1
+                else:
+                    professoresNoSlot.append(professor)
+                #
+                # VERFICA A DISPONIBILIDADE DO PROFESSOR NO HORARIO
+                #
+                if  tipoRestricaoProfessorNoSlot[professor][slot]  == 0:
+                    penalidades['professorInviavel'] += 1
+                elif tipoRestricaoProfessorNoSlot[professor][slot]  == 1:
+                    penalidades['professorIndesejavel'] += 1
+                
+                
+                #
+                # VERFICA SE OCORREU JANELA
+                #  isto é,  se o professor ja deu uma aula no dia depois teve uma horario vago
+                #              e agora tem uma nova aula no mesmo dia
+
+                # ultimaAula armazena a quantos slots o professor ministrou sua ultima aulla
+                #
+                if ultimaAula.get(professor,0) > 0:
+                    penalidades['janelas'] += ultimaAula.get(professor)
+                ultimaAula[professor] = 0
+                
+                
+                #
+                # Contabiliza total de aulas entre professor e turma em um mesmo dia
+                #
+                
+                professoresNoDiacomATurma[professor] =  professoresNoDiacomATurma.get(professor,{})
+                professoresNoDiacomATurma[professor][encontro.aula.turma] = professoresNoDiacomATurma[professor].get(encontro.aula.turma,0)+1
+            
+                
+                    
+                    
+            for professor in ultimaAula.keys():
+                if not professor in professoresNoSlot:
+                    ultimaAula[professor] += 1
+            professoresNoDia = list(set(professoresNoDia + professoresNoSlot))
+            
+            
+            
+        for professor,quantidadeAulasTurma in professoresNoDiacomATurma.iteritems():
+            for turma,quantidadeAulas in quantidadeAulasTurma.iteritems():
+                if quantidadeAulas > 2:
+                    penalidades['excessoAulasNoMesmoDia'] += (quantidadeAulas - 2)
+                    #penalidades['excessoAulasNoMesmoDia'] += (quantidadeAulas - professor.maxAulasPorDiaPorTurma)
+                    
+        for professor in professoresNoDia:
+            totalDiasProfessor[professor] = totalDiasProfessor.get(professor,0) + 1
+            
+            
+    for professor,quantidadeAulas in minimoDiasProfessor.items(): 
+        excesso = (totalDiasProfessor[professor] - quantidadeAulas)
+        if excesso > 0:
+            penalidades['professoresComExcessoDias']  += excesso
+            
+        
+        
+    totalPenalidades = 0
+    #
+    # Pondera total de penalidade segundo respectivos pesos
+    #
+    totalPenalidades += pesos['choqueProfessores'] * penalidades['choqueProfessores']
+    totalPenalidades += pesos['professorInviavel'] * penalidades['professorInviavel']
+    totalPenalidades += pesos['professorIndesejavel'] * penalidades['professorIndesejavel']
+    totalPenalidades += pesos['janelas'] * penalidades['janelas']
+    totalPenalidades += pesos['professoresComExcessoDias'] * penalidades['professoresComExcessoDias']
+    totalPenalidades += pesos['excessoAulasNoMesmoDia'] * penalidades['excessoAulasNoMesmoDia']
+    
+    print totalPenalidades,penalidades
+    
+    celula.fitness = (1./(100.+totalPenalidades))*100
+    return mensagens
+    

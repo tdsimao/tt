@@ -1,0 +1,18 @@
+# -*- coding: utf-8 -*-
+from django.db import models
+from django.contrib.auth.models import User
+
+
+
+# Create your models here.
+class Grade(models.Model):
+    id = models.AutoField(primary_key = True, unique = True,  )
+    escola = models.CharField(max_length=45)
+    turno = models.CharField(max_length=45)
+    dias = models.IntegerField()
+    auladia = models.IntegerField()
+    user = models.ForeignKey(User)
+    
+    
+    def __unicode__(self):
+        return self.escola +' '+ self.turno

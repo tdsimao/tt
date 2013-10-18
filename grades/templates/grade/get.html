@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+
+
+{%block content%}
+    <div class="page-header">
+        <div class="row">
+            <div class="span6">
+                <div class="btn-group pull-right">
+                        <a href="{% url grades:update grade.id %}" alt="Editar"   class="btn"><i  class="icon-edit"></i> Editar</a>
+                        <a href="{% url grades:delete grade.id %}" alt="Excluir"  class="btn"><i  class="icon-trash"></i> Excluir</a>
+                        <br>
+                        <a href="{% url turmas:create grade.id%}"  alt="Adicionar Turma" class="btn"  >
+                            <i class="icon-plus"></i> Adicionar Turma
+                        </a>
+                </div>
+                <h4>{{grade.escola}}</h4>
+                <p>Periodo: {{grade.turno}}</p>
+                <p>Dias letivos por semana: {{grade.dias}}</p>
+                <p>Número de aulas por dia: {{grade.auladia}}</p>
+                <p>Quantidade de turmas: {{grade.auladia}}</p>
+            </div>
+                
+        </div>
+    </div>
+    <div class="tabbable"> <!-- Only required for left/right tabs -->
+      
+        <ul class="nav nav-tabs">
+            <li  class="{%if 'turmas' in menus%}active{%endif%}">
+                <a href="/grades/get/{{grade.id}}/">
+                    <i  class="icon-user"></i> Turmas
+                </a>
+            </li>
+            <li  class="{%if 'restricoes' in menus%}active{%endif%}">
+                <a href="/restricoes/list/{{ grade.id}}" class="">
+                    <i  class="icon-th"></i> Restrições do Professores
+                </a>
+            </li>
+            <li  class="{%if 'horarios'   in menus%}active{%endif%}">
+                <a href="/celulas/list/{{ grade.id}}"  alt="Gerar Horário">
+                    <i  class="icon-calendar"></i> Horários
+                </a>
+            </li>
+        </ul>
+    </div>
+        
+    {%block gradeContent%}
+        <div class="row ">
+        <!-- Listar Objetos -->
+            {%for turma in grade.turma_set.all%}
+            
+                {% include "turma/get.html"%}
+                
+                 <!-- Força Pular linha a cada 2 objetos  -->
+                {% cycle '' '</div> <div class="row ">' %}
+                        
+        
+            {%endfor%}
+            
+            
+            <div class="span6">
+                <div class="well">
+                    <a href="{% url turmas:create grade.id%}"  alt="Adicionar Turma" class="btn "  >
+                        <i class="icon-plus"></i> Adicionar Turma
+                    </a>
+                </div>
+            </div>
+                    
+                    
+        </div>
+    {%endblock gradeContent%}
+                
+{%endblock content%}
+

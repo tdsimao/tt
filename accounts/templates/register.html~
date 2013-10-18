@@ -1,0 +1,36 @@
+{% extends "base.html"%}
+
+
+{%block content%}
+
+	{% if form.errors%}
+		<p class="error">Sorry, that's not a valid username or password</p>
+	{% endif%}
+		<section>
+			<header class="major">
+				<h2>Cadastro de Usuario</h2>
+			</header>
+			<div>
+
+			    <!-- Inicio de uma linha -->
+			    <div class="row">
+			    
+				    <!-- Objeto -->
+				    <div class="12u"; >
+					    <section class="box">
+						    <header>
+						    
+						    </header>
+						    <form action="{% url accounts:auth %}" method="post">{% csrf_token%}
+						    	{{form}}
+						    	<br>
+						    	<input type="submit" value="Register"  class="button button-alt/>
+						    </form>
+					    </section>
+				    </div>
+			    </div>
+			    <!-- Fim de uma linha -->
+				
+			</div>
+		</section>
+{%endblock content%}

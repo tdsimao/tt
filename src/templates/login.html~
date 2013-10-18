@@ -1,0 +1,56 @@
+{% extends "base.html"%}
+
+
+{%block content%}
+	<!-- main -->
+		<section>
+			<header class="major">
+				<h2>Login</h2><br>
+				<p>
+				Testando sessão  e cookies.
+				Language: {{language}}
+				Session Language: {{sessionLanguage}}
+				</p>
+			</header>
+			<div>
+
+			    <!-- Inicio de uma linha -->
+			    <div class="row">
+			    <!-- Listar Objetos -->
+                {%for grade in grades%}
+					    <!-- Objeto -->
+					    <div class="4u"; >
+                            <br>
+						    <section class="box">
+							    <header>
+					    		<div class="12u">
+								    <div class="10u">
+									    <h3>{{grade.escola}}</h3>
+								    </div>
+								    <div class="2u">
+								    	<a href="/timetabling/grade/get/{{grade.idGrade}}" alt="Distribuicao">  <img src="{{ STATIC_PREFIX }}assets/images/icons/block.png" alt="Distribuicao"></a>
+	                                    <a href="/timetabling/grade/get/{{grade.idGrade}}" alt="Distribuicao">  <img src="{{ STATIC_PREFIX }}assets/images/icons/edit.png" alt="Editar"></a>
+	                                </div>
+                                </div>
+							    </header>
+							    <p><h4>Periodo: {{grade.turno}}</h4></p>
+							    <p>Dias de aula por semana: {{grade.dias}}</p>
+							    <p>Numero de aulas por dia: {{grade.auladia}}</p>
+							    <footer>
+							    
+
+                                    <a href="/timetabling/grade/get/{{grade.idGrade}}" class="button button-alt">Distribução </a>
+							    </footer>
+						    </section>
+					    </div>
+
+			        <!-- FIM Objeto -->
+					
+                {%endfor%}
+			    </div>
+			    <!-- Fim de uma linha -->
+				
+			</div>
+		</section>
+	<!-- fim main classes -->
+{%endblock content%}

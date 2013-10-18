@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{%block content%}
+    <!-- main -->
+    <div class="well">
+        <h1>Turma</h1>
+    </div>
+    <p><hr></p>
+    <div class="row ">
+    <!-- Listar Objetos -->
+    <!-- Objeto -->
+    <!-- Inicio de uma linha -->
+        <div class="span12">
+            <div class="well">
+                <h4>Nome: {{turma.nome}}</h4>
+                <form action="{% url turmas:delete turma.id %}" method="POST">
+                    {% csrf_token %}
+                    <input type="submit" class="btn btn-danger" value="Sim">
+                    <a href="{% url grades:get turma.grade.id %}" class="btn">Cancelar</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+                
+    <!-- fim main classes -->
+{%endblock content%}

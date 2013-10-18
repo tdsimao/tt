@@ -1,0 +1,32 @@
+{% extends "base.html"%}
+
+
+{%block content%}
+
+	<section>
+		<header class="major">
+			<h2>Login</h2>
+		</header>
+		<div>
+
+		    <!-- Inicio de uma linha -->
+		    <div class="row">
+		    
+			    <!-- Objeto -->
+			    <div class="12u"; >
+				    <section class="box">
+					    <header>
+					    
+					    </header>
+					    Seus detalhes de login são inválidos!
+					    <footer>
+                           <a href="/account/login/" class="button button-alt">Tentar Novamente </a>
+					    </footer>
+				    </section>
+			    </div>
+		    </div>
+		    <!-- Fim de uma linha -->
+			
+		</div>
+	</section>
+{%endblock content%}

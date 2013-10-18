@@ -1,0 +1,9 @@
+<html>
+	<body>
+	
+		"Yes,my first page  works"<br>
+		by {{name}}
+		<br>
+		"If you are reading this, then the template works!! Congratulations!"
+	</body>
+</html>

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+
+{%block content%}
+    <!-- main -->
+    <div class="well">
+        <h1>Usuario</h1>
+    </div>
+    <p><hr></p>
+    <div class="row ">
+    <!-- Listar Objetos -->
+    <!-- Objeto -->
+    <!-- Inicio de uma linha -->
+        <div class="span12">
+            <div class="well">
+                <h4>Usuario: {{account.username}}</h4>
+                <p>Email: {{account.email}}</p>
+                <p>Nome: {{account.first_name}}</p>
+                <p>Sobrenome: {{account.last_name}}</p>
+                <div class="btn-group">
+                    <a href="{% url accounts:change_password %}"    alt="Aterar Senha" class="btn"><i  class="icon-key"></i>Alterar Senha</a>
+                </div>
+                <p></p>
+                <div class="btn-group">
+                    <a href="{% url accounts:update account.id %}" alt="Editar"   class="btn"><i  class="icon-edit"></i> Editar</a>
+                    <a href="{% url accounts:delete account.id %}" alt="Excluir"  class="btn"><i  class="icon-trash"></i> Excluir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+                
+    <!-- fim main classes -->
+{%endblock content%}

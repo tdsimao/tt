@@ -1,0 +1,32 @@
+{% extends "base.html"%}
+
+
+{%block content%}
+
+	<section>
+		<header class="major">
+			<h2>Usuário</h2>
+		</header>
+		<div>
+
+		    <!-- Inicio de uma linha -->
+		    <div class="row">
+		    
+			    <!-- Objeto -->
+			    <div class="12u"; >
+				    <section class="box">
+					    <header>
+					    
+					    </header>
+					    Seu usuário foi criado com sucesso
+					    <footer>
+                           <a href="{% url accounts:login %}" class="button button-alt">Entrar </a>
+					    </footer>
+				    </section>
+			    </div>
+		    </div>
+		    <!-- Fim de uma linha -->
+			
+		</div>
+	</section>
+{%endblock content%}

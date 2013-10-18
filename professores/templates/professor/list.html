@@ -1,0 +1,35 @@
+{% extends "base.html"%}
+
+{%block content%}
+	<!-- main -->
+    <div class="page-header">
+        <a href="{% url professores:create %}" class="btn btn-large  pull-right" >
+            <i class="icon-plus pull-left"></i>  Cadastrar Professor
+        </a>
+	    <h1>Professores</h1>
+    </div>
+    <div class="row ">
+    <!-- Listar Objetos -->
+        {%for professor in professores%}
+        <!-- Objeto -->
+        <!-- Inicio de uma linha -->
+	    {% include "professor/get.html"%}
+                 <!-- Força Pular linha a cada 3 objetos  -->
+                {% cycle '' '' '</div> <div class="row ">' %}
+                        
+	
+        {%endfor%}
+            <div class="span4">
+                <div class="well" >
+                    <h4>Cadastrar Novo</h4>
+                    <p align="center">
+                    <a href="{% url professores:create %}" class="btn  btn-large btn-primary" >
+                        <i class="icon-plus-sign-alt icon-4x pull-left"></i> Adicionar<br> Novo<br>professor
+                    </a>
+                    </p>
+                </div>
+            </div>
+	</div>
+				
+	<!-- fim main classes -->
+{%endblock content%}

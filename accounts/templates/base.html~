@@ -1,0 +1,223 @@
+{% load static %}
+{% get_static_prefix as STATIC_PREFIX%}
+
+<!DOCTYPE HTML>
+
+<html>
+<head>
+		<title>{%block title%}Timetabling Escolar 1.0{%endblock%}</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic" rel="stylesheet">
+
+
+		<script src="{{ STATIC_PREFIX }}assets/js/jquery.min.js"></script>
+		<script src="{{ STATIC_PREFIX }}assets/js/jquery.dropotron.js"></script>
+		<script src="{{ STATIC_PREFIX }}assets/js/config.js"></script>
+        <style type="text/css">html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}body{-webkit-text-size-adjust:none}</style>
+        <style type="text/css">.container{width:1200px !important;margin: 0 auto;}</style>
+        <style type="text/css">.\31 2u{width:100%}.\31 1u{width:91.6666666667%}.\31 0u{width:83.3333333333%}.\39 u{width:75%}.\38 u{width:66.6666666667%}.\37 u{width:58.3333333333%}.\36 u{width:50%}.\35 u{width:41.6666666667%}.\34 u{width:33.3333333333%}.\33 u{width:25%}.\32 u{width:16.6666666667%}.\31 u{width:8.3333333333%}.\31 u,.\32 u,.\33 u,.\34 u,.\35 u,.\36 u,.\37 u,.\38 u,.\39 u,.\31 0u,.\31 1u,.\31 2u{float:left;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box}.\-11u{margin-left:91.6666666667%}.\-10u{margin-left:83.3333333333%}.\-9u{margin-left:75%}.\-8u{margin-left:66.6666666667%}.\-7u{margin-left:58.3333333333%}.\-6u{margin-left:50%}.\-5u{margin-left:41.6666666667%}.\-4u{margin-left:33.3333333333%}.\-3u{margin-left:25%}.\-2u{margin-left:16.6666666667%}.\-1u{margin-left:8.3333333333%}.row.flush{margin-left:0}.row.flush>*{padding:0!important}</style>
+        <style type="text/css">.row>*{padding:50px 0 0 50px}.row+.row>*{padding-top:50px}.row{margin-left:-50px}.row.half>*{padding:25px 0 0 25px}.row.half+.row.half>*{padding-top:25px}.row.half{margin-left:-25px}.row.double>*{padding:100px 0 0 100px}.row.double+.row.double>*{padding-top:100px}.row.double{margin-left:-100px}</style>
+        <style type="text/css">.row:after{content:'';display:block;clear:both;height:0}.row:first-child>*{padding-top:0}.row>*{padding-top:0}</style>
+        <style type="text/css">.not-desktop{display:none}.only-mobile,.only-1000px{display:none}</style>
+        
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_PREFIX }}assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_PREFIX }}assets/css/style-desktop.css">
+		<script src="{{ STATIC_PREFIX }}assets/js/skel-panels.min.js"></script>
+		<noscript>
+			&lt;link rel="stylesheet" href="{{ STATIC_PREFIX }}assets/css/skel-noscript.css" /&gt;
+			&lt;link rel="stylesheet" href="{{ STATIC_PREFIX }}assets/css/style.css" /&gt;
+			&lt;link rel="stylesheet" href="{{ STATIC_PREFIX }}assets/css/style-desktop.css" /&gt;
+		</noscript>
+		<!--[if lte IE 8]><script src="{{ STATIC_PREFIX }}assets/js/html5shiv.js"></script><link rel="stylesheet" href="{{ STATIC_PREFIX }}assets/css/ie8.css" /><![endif]-->
+	</head>
+
+<body>
+	<div id="header-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="12u">
+				
+					<!-- Header -->
+						<section id="header">
+							
+							<!-- Logo -->
+								<h1><a href="#">Timetabling escolar</a></h1>
+							
+							<!-- Nav -->
+								<nav id="nav">
+									<ul>
+										<li class="current_page_item" style="white-space: nowrap;"><a href="/">Home</a></li>
+										<li style="white-space: nowrap;"><a href="/timetabling/grade/all">Grades</a></li>
+										<li style="white-space: nowrap;"><a href="/admin">Admin</a></li>
+										<li style="white-space: nowrap;"><a href="no-sidebar.html">No Sidebar</a></li>
+										<li class="opener" style="-webkit-user-select: none; cursor: pointer; white-space: nowrap;">
+											<a href="">Dropdown</a>
+											<ul class="dropotron dropotron-level-0" style="-webkit-user-select: none; display: none; position: absolute; z-index: 1000;">
+												<li style="white-space: nowrap;"><a href="#" style="display: block;">Lorem ipsum dolor</a></li>
+												<li style="white-space: nowrap;"><a href="#" style="display: block;">Magna phasellus</a></li>
+												<li style="white-space: nowrap;"><a href="#" style="display: block;">Etiam dolore nisl</a></li>
+												<li class="opener" style="-webkit-user-select: none; cursor: pointer; white-space: nowrap;">
+													<a href="" style="display: block;">Phasellus consequat</a>
+													<ul class="dropotron dropotron-level-1" style="-webkit-user-select: none; display: none; position: absolute; z-index: 1001;">
+														<li style="white-space: nowrap;"><a href="#" style="display: block;">Magna phasellus</a></li>
+														<li style="white-space: nowrap;"><a href="#" style="display: block;">Etiam dolore nisl</a></li>
+														<li style="white-space: nowrap;"><a href="#" style="display: block;">Veroeros feugiat</a></li>
+													</ul>
+												</li>
+												<li style="white-space: nowrap;"><a href="#" style="display: block;">Veroeros feugiat</a></li>
+											</ul>
+										</li>
+									</ul>
+								</nav>
+
+						</section>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	<div id="main-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="12u">
+					{%block content%}
+					<!-- main -->
+						<article class="box is-post">
+							<a href="http://facebook.com/tdsimao" class="image image-full"><img src="{{ STATIC_PREFIX }}assets/images/pic01.jpg" alt=""></a>
+							<header>
+								<h2>Gere seu horario aqui, é GRATIS</h2>
+								<span class="byline">Subtitulo para escrever subtitulo</span>
+							</header>
+							<p>
+								Texto sobre porque criar  horario aqui...
+								Texto sobre porque criar  horario aqui...
+								Texto sobre porque criar  horario aqui...
+								Texto sobre porque criar  horario aqui...
+								Texto sobre porque criar  horario aqui...
+								Texto sobre porque criar  horario aqui...
+								Texto sobre porque criar  horario aqui...
+								Texto sobre porque criar  horario aqui... 
+							</p>
+							<section>
+								<header>
+									<h3>Deixe o trabalho  conosco !!!</h3>
+								</header>
+                                <div>
+								    <p>
+									    Escrever besteiras aqui ....<br><br>
+								    </p>
+                                </div>
+                                <div class="image image-full"><img src="{{ STATIC_PREFIX }}assets/images/relax.jpg" alt=""></div>
+
+
+							</section>
+							<section>
+								<header>
+									<h3>So in conclusion ...</h3>
+								</header>
+								<p>
+									Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc, 
+									eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean 
+									elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
+									sit amet nullam consequat feugiat dolore tempus. Elementum odio duis semper risus et lectus commodo fringilla. 
+									Maecenas sagittis convallis justo vel mattis. 
+								</p>
+							</section>
+						</article>
+						<article class="box is-post">
+                            <section class="is-calendar">
+								<div class="inner">
+									<table>
+										<caption>February 2013</caption>
+										<thead>
+											<tr>
+												<th scope="col" title="Monday">M</th>
+												<th scope="col" title="Tuesday">T</th>
+												<th scope="col" title="Wednesday">W</th>
+												<th scope="col" title="Thursday">T</th>
+												<th scope="col" title="Friday">F</th>
+												<th scope="col" title="Saturday">S</th>
+												<th scope="col" title="Sunday">S</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td colspan="4" class="pad"><span>&nbsp;</span></td>
+												<td><span>Disci/Professor</span></td>
+												<td><span>Disci/Professor</span></td>
+												<td><span>Disci/Professor</span></td>
+											</tr>
+											<tr>
+												<td><span>Disci/Professor</span></td>
+												<td><span>Disci/Professor</span></td>
+												<td><a href="#">Disci/Professor</a></td>
+												<td><span>Disci/Professor</span></td>
+												<td><span>Disci/Professor</span></td>
+												<td><span>Disci/Professor</span></td>
+												<td><a href="#">Disci/Professor</a></td>
+											</tr>
+											<tr>
+												<td><span>Disci/Professor</span></td>
+												<td><span>Disci/Professor</span></td>
+												<td><span>Disci/Professor</span></td>
+												<td class="today"><a href="#">Professordsd</a></td>
+												<td><span>15</span></td>
+												<td><span>16</span></td>
+												<td><span>17</span></td>
+											</tr>
+											<tr>
+												<td><span>18</span></td>
+												<td><span>19</span></td>
+												<td><span>20</span></td>
+												<td><span>21</span></td>
+												<td><span>22</span></td>
+												<td><a href="#">23</a></td>
+												<td><span>24</span></td>
+											</tr>
+											<tr>
+												<td><a href="#">25</a></td>
+												<td><span>26</span></td>
+												<td><span>27</span></td>
+												<td><span>28</span></td>
+												<td class="pad" colspan="3"><span>&nbsp;</span></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</section>
+						</article>
+					<!-- fim main classes -->
+                {%endblock%}
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer Wrapper -->
+	<div id="footer-wrapper">
+		<!-- Footer -->
+			<section id="footer" class="container">
+				<div class="row">
+					<div class="12u">
+					
+						<!-- Copyright -->
+							<div id="copyright">
+								<ul class="links">
+									<li>&copy; Thiago Dias Simão</li>
+									<li>Icons: <a href="http://dryicons.com">DryIcons</a></li>
+									<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								</ul>
+							</div>
+
+					</div>
+				</div>
+			</section>
+	</div>
+</body>
+
+</html>
+

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+
+{%block content%}
+    <!-- main -->
+    <div class="well">
+        <h1>Usuario</h1>
+    </div>
+    <p><hr></p>
+    <div class="row ">
+    <!-- Listar Objetos -->
+    <!-- Objeto -->
+    <!-- Inicio de uma linha -->
+        <div class="span12">
+            <div class="well">6646
+                <h4>Usuario: {{account.username}}</h4>
+                <p>Email: {{account.email}}</p>
+                <p>Nome: {{account.first_name}}</p>
+                <p>Sobrenome: {{account.last_name}}</p>
+                <form action="{% url accounts:delete account.id %}" method="POST">
+                    {% csrf_token %}
+                    <input type="submit" class="btn btn-danger" value="Sim">
+                    <a href="{% url accounts:my_account %}" class="btn">Cancelar</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+                
+    <!-- fim main classes -->
+{%endblock content%}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load bootstrap_toolkit %}
+
+{% block content %}
+
+ <div class="row">
+    <div class="span12" >
+        <legend>Cadastrar Turma</legend>
+        <form action="{% url turmas:create idGrade %}" method="POST">
+            {% csrf_token %}
+            {{ form|as_bootstrap }}
+            <input type="submit" value="Salvar" class="btn">
+            <a href="{% url grades:get idGrade %}" class="btn">Cancelar</a>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

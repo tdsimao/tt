@@ -1,0 +1,72 @@
+{% extends "base.html"%}
+
+
+{%block nav%}
+	{{ block.super }}
+{%endblock nav%}	
+
+
+{%block content%}
+	<!-- main -->
+		<section>
+			<header class="major">
+				<h2>Grades</h2>
+			</header>
+			<div>
+
+			    <!-- Inicio de uma linha -->
+			    <div class="row">
+			    <!-- Listar Objetos -->
+                {%for grade in grades%}
+					<!-- Objeto -->
+					<div class="4u"; >
+						<br>
+						<section class="box">
+							<header>
+							<div class="12u">
+								<div class="10u">
+									<h3>{{grade.escola}}</h3>
+								</div>
+								<div class="2u">
+									<a href="{% url grades:delete grade.id %}" alt="Distribuicao">  <img src="{{ STATIC_PREFIX }}assets/images/icons/block.png" alt="Distribuicao"></a>
+									<a href="{% url grades:update grade.id %}" alt="Distribuicao">  <img src="{{ STATIC_PREFIX }}assets/images/icons/edit.png" alt="Editar"></a>
+								</div>
+							</div>
+							</header>
+							<p><h4>Periodo: {{grade.turno}}</h4></p>
+							<p>Dias de aula por semana: {{grade.dias}}</p>
+							<p>Numero de aulas por dia: {{grade.auladia}}</p>
+							<footer>
+							
+
+								<a href="{% url grades:get grade.id %}" class="button button-alt">Detalhes</a>
+							</footer>
+						</section>
+					</div>
+
+			        <!-- FIM Objeto -->
+			        
+					
+
+			        <!-- FIM Objeto -->
+					
+                {%endfor%}
+               <!-- Objeto -->
+					<div class="4u"; >
+						<br>
+						<section class="box">
+							<header>
+								<h3>Nova Grade</h3>
+							</header>
+							<footer>
+								<a href="{% url grades:create %}" class="button button-alt">Nova </a>
+							</footer>
+						</section>
+					</div>
+			    </div>
+			    <!-- Fim de uma linha -->
+				
+			</div>
+		</section>
+	<!-- fim main classes -->
+{%endblock content%}

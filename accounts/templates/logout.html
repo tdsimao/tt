@@ -1,0 +1,36 @@
+{% extends "base.html"%}
+
+
+{%block nav%}
+	{{ block.super }}
+{%endblock nav%}	
+
+{%block content%}
+
+	<section>
+		<header class="major">
+			<h2>Login</h2>
+		</header>
+		<div>
+
+		    <!-- Inicio de uma linha -->
+		    <div class="row">
+		    
+			    <!-- Objeto -->
+			    <div class="12u"; >
+				    <section class="box">
+					    <header>
+					    
+					    </header>
+					    Voce saiu do sitema.
+					    <footer>
+                           <a href="{% url accounts:login %}" class="button button-alt">Entrar</a>
+					    </footer>
+				    </section>
+			    </div>
+		    </div>
+		    <!-- Fim de uma linha -->
+			
+		</div>
+	</section>
+{%endblock content%}

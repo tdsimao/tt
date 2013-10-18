@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load bootstrap_toolkit %}
+
+{% block content %}
+	<!-- main -->
+	<div class="well">
+	    <h1>Editar Professor</h1>
+    </div>
+    <p><hr></p>
+    <div class="row">
+    <!-- Listar Objetos -->
+        <!-- Objeto -->
+        <!-- Inicio de uma linha -->
+        <div class="span6">
+            <div class="well">
+    			<form action="{% url professores:update idObj %}" method="POST">
+    				{% csrf_token %}
+    				{{form}}
+                    <p class="form-actions">
+            				<input type="submit" value="Salvar" class="btn">
+                            <a class="btn"  href = "{%url professores:list %}">Cancelar</a>
+                    </p>
+    			</form>
+            </div>
+        </div>
+    </div>
+	
+	<!-- fim main classes -->
+{% endblock %}

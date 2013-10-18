@@ -1,0 +1,88 @@
+Dia	Hora	1B	2A	1A	
+0	0	Joaqui / FIS	Meire / GEO	Luiza / ART	
+0	1	Hugo / HIS	Joaqui / FIS	Paulo / BIO	
+0	2	Meire / GEO	Joaqui / FIS	Paulo / BIO	
+1	0	Meire / GEO	Meire / GEO	Paulo / BIO	
+1	1	Hugo / HIS	Joaqui / FIS	Joaqui / FIS	
+1	2	Hugo / HIS	Meire / GEO	Luiza / ART	
+2	0	Joaqui / FIS	Robson / EFI	Luiza / ART	
+2	1	Joaqui / FIS	Robson / EFI	Joaqui / FIS	
+2	2	Meire / GEO	Joaqui / FIS	Luiza / ART	
+
+Dia	Hora	1B	2A	1A	
+0	0	Hugo / HIS	Meire / GEO	Joaqui / FIS	
+0	1	Hugo / HIS	Meire / GEO	Joaqui / FIS	
+0	2	Joaqui / FIS	Meire / GEO	Paulo / BIO	
+1	0	Meire / GEO	Robson / EFI	Paulo / BIO	
+1	1	Meire / GEO	Joaqui / FIS	Luiza / ART	
+1	2	Joaqui / FIS	Joaqui / FIS	Paulo / BIO	
+2	0	Hugo / HIS	Joaqui / FIS	Luiza / ART	
+2	1	Joaqui / FIS	Joaqui / FIS	Luiza / ART	
+2	2	Meire / GEO	Robson / EFI	Luiza / ART	
+
+Dia	Hora	1B	2A	1A	
+0	0	Joaqui / FIS	Meire / GEO	Luiza / ART	
+0	1	Hugo / HIS	Meire / GEO	Paulo / BIO	
+0	2	Meire / GEO	Meire / GEO	Paulo / BIO	
+1	0	Meire / GEO	Robson / EFI	Paulo / BIO	
+1	1	Hugo / HIS	Joaqui / FIS	Joaqui / FIS	
+1	2	Hugo / HIS	Joaqui / FIS	Luiza / ART	
+2	0	Joaqui / FIS	Joaqui / FIS	Luiza / ART	
+2	1	Joaqui / FIS	Joaqui / FIS	Joaqui / FIS	
+2	2	Meire / GEO	Robson / EFI	Luiza / ART	
+
+Dia	Hora	1B	2A	1A	
+0	0	Hugo / HIS	Meire / GEO	Joaqui / FIS	
+0	1	Hugo / HIS	Joaqui / FIS	Joaqui / FIS	
+0	2	Joaqui / FIS	Joaqui / FIS	Paulo / BIO	
+1	0	Meire / GEO	Meire / GEO	Paulo / BIO	
+1	1	Meire / GEO	Joaqui / FIS	Luiza / ART	
+1	2	Joaqui / FIS	Meire / GEO	Paulo / BIO	
+2	0	Hugo / HIS	Robson / EFI	Luiza / ART	
+2	1	Joaqui / FIS	Robson / EFI	Luiza / ART	
+2	2	Meire / GEO	Joaqui / FIS	Luiza / ART	
+
+Dia	Hora	1B	2A	1A	
+0	0	Meire / GEO	Joaqui / FIS	Luiza / ART	
+0	1	Meire / GEO	Meire / GEO	Luiza / ART	
+0	2	Hugo / HIS	Meire / GEO	Luiza / ART	
+1	0	Hugo / HIS	Robson / EFI	Paulo / BIO	
+1	1	Joaqui / FIS	Joaqui / FIS	Luiza / ART	
+1	2	Joaqui / FIS	Meire / GEO	Paulo / BIO	
+2	0	Hugo / HIS	Robson / EFI	Paulo / BIO	
+2	1	Joaqui / FIS	Joaqui / FIS	Joaqui / FIS	
+2	2	Meire / GEO	Joaqui / FIS	Joaqui / FIS	
+
+Dia	Hora	1B	2A	1A	
+0	0	Joaqui / FIS	Robson / EFI	Luiza / ART	
+0	1	Meire / GEO	Joaqui / FIS	Paulo / BIO	
+0	2	Joaqui / FIS	Meire / GEO	Joaqui / FIS	
+1	0	Hugo / HIS	Joaqui / FIS	Luiza / ART	
+1	1	Meire / GEO	Joaqui / FIS	Luiza / ART	
+1	2	Joaqui / FIS	Meire / GEO	Luiza / ART	
+2	0	Hugo / HIS	Joaqui / FIS	Paulo / BIO	
+2	1	Hugo / HIS	Robson / EFI	Paulo / BIO	
+2	2	Meire / GEO	Meire / GEO	Joaqui / FIS	
+
+Dia	Hora	1B	2A	1A	
+0	0	Meire / GEO	Robson / EFI	Luiza / ART	
+0	1	Meire / GEO	Joaqui / FIS	Paulo / BIO	
+0	2	Hugo / HIS	Meire / GEO	Joaqui / FIS	
+1	0	Hugo / HIS	Joaqui / FIS	Luiza / ART	
+1	1	Joaqui / FIS	Joaqui / FIS	Luiza / ART	
+1	2	Joaqui / FIS	Meire / GEO	Luiza / ART	
+2	0	Hugo / HIS	Joaqui / FIS	Paulo / BIO	
+2	1	Joaqui / FIS	Robson / EFI	Paulo / BIO	
+2	2	Meire / GEO	Meire / GEO	Joaqui / FIS	
+
+Dia	Hora	1B	2A	1A	
+0	0	Joaqui / FIS	Joaqui / FIS	Luiza / ART	
+0	1	Meire / GEO	Meire / GEO	Luiza / ART	
+0	2	Joaqui / FIS	Meire / GEO	Luiza / ART	
+1	0	Hugo / HIS	Robson / EFI	Paulo / BIO	
+1	1	Meire / GEO	Joaqui / FIS	Luiza / ART	
+1	2	Joaqui / FIS	Meire / GEO	Paulo / BIO	
+2	0	Hugo / HIS	Robson / EFI	Paulo / BIO	
+2	1	Hugo / HIS	Joaqui / FIS	Joaqui / FIS	
+2	2	Meire / GEO	Joaqui / FIS	Joaqui / FIS	
+

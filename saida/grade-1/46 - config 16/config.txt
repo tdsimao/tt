@@ -1,0 +1,1 @@
+{'tamanhoElite': 5, 'repeticoes': 1, 'probabilidadeMutacao': 100, 'limiteGeracoes': 100000, 'metodoMutacao': u'trocarEncontro', 'populacao': 100, 'limiteTempo': 36.0, 'metodoSobrevivencia': u'elitismo', 'quantidadePais': 74, 'metodoCrossover': u'sx', 'metodoSelecao': u'torneio'}
